@@ -31,7 +31,7 @@ using Sources        = std::vector<Source>;
 using Distance       = int;
 using Distances      = std::vector<Distance>;
 
-class dfs_visitor_base {
+class bfs_visitor_base {
   // Types
 public:
   // Visitor Functions
