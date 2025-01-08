@@ -5,6 +5,7 @@
 #include <forward_list>
 #include <list>
 #include <algorithm>
+#include <string>
 #include "graph/graph.hpp"
 #include "container_utility.hpp"
 

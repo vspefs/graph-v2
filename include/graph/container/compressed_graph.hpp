@@ -1,6 +1,5 @@
 #pragma once
 
-#include "container_utility.hpp"
 #include <vector>
 #include <concepts>
 #include <functional>
@@ -11,6 +10,7 @@
 #include <format>
 #include <iostream>
 #include "graph/graph.hpp"
+#include "container_utility.hpp"
 
 // NOTES
 //  have public load_edges(...), load_vertices(...), and load()
