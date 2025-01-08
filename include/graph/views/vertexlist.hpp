@@ -163,8 +163,6 @@ public:
 public:
   constexpr reference operator*() const {
     value_.shadow_.vertex = &*iter_;
-    if constexpr (!is_void_v<vertex_value_type>)
-      value_.shadow_.value = this->value_fn_(*iter_);
     return value_.value_;
   }
 

@@ -333,8 +333,9 @@ public:
   vertices_depth_first_search_view& operator=(vertices_depth_first_search_view&&)      = default;
 
 public:
+  class iterator;
   struct end_sentinel {
-    bool operator==(const end_sentinel& rhs) const noexcept { return rhs.the_range_->S_.empty(); }
+    bool operator==(const iterator& rhs) const noexcept { return rhs.the_range_->S_.empty(); }
   };
 
   class iterator {
@@ -558,7 +559,7 @@ public:
 
   class iterator;
   struct end_sentinel {
-    bool operator==(const end_sentinel& rhs) const noexcept { return rhs.the_range_->S_.empty(); }
+    bool operator==(const iterator& rhs) const noexcept { return rhs.the_range_->S_.empty(); }
     //bool operator!=(const end_sentinel& rhs) const noexcept { return !operator==(rhs); }
   };
 

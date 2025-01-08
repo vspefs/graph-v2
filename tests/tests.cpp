@@ -122,7 +122,7 @@ public:
     //
     // ==, <=>
     //
-    auto operator==(const iterator& rhs) const { return i_ == rhs.i_; }
+    bool operator==(const iterator& rhs) const { return i_ == rhs.i_; }
 
     auto operator<=>(const iterator& rhs) const
     requires random_access_range<C>
